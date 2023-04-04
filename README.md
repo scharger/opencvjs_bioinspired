@@ -1,6 +1,9 @@
 ## OpenCV.js 4 with Bioinspired
-For detailed information see platforms/js/opencv_js.config.py
-Also, you can configure required modules (some turned off) https://github.com/scharger/opencvjs_bioinspired/blob/c5567d01f27fbad120d46c470b54c827521fcc8a/platforms/js/build_js.py#L93
+For detailed information see:
+/platforms/js/opencv_js.config.py
+
+Also, you can configure required modules (some turned off):
+/platforms/js/build_js.py (93 - 138)
 
 
 
