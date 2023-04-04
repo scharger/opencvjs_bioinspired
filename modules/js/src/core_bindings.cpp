@@ -97,6 +97,10 @@ using namespace cv::dnn;
 using namespace aruco;
 #endif
 
+#include "../../../contrib_modules/bioinspired/include/opencv2/bioinspired.hpp"
+
+using namespace cv::bioinspired;
+
 #ifdef HAVE_OPENCV_VIDEO
 typedef TrackerMIL::Params TrackerMIL_Params;
 #endif

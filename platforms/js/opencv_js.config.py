@@ -193,7 +193,55 @@ calib3d = {
     ],
 }
 
-white_list = makeWhiteList([core, imgproc, objdetect, video, dnn, features2d, photo, calib3d])
+bioinspired = {
+    '': [
+        'bioinspired_Retina',
+    ],
+	'bioinspired_Retina': [
+        'bioinspired_Retina',
+        'create',
+		'activateContoursProcessing',
+		'activateMovingContoursProcessing',
+		'applyFastToneMapping',
+		'clearBuffers',
+		'getInputSize',
+		'getMagno',
+		'getMagnoRAW',
+		'getOutputSize',
+		'getParameters',
+		'getParvo',
+		'getParvoRAW',
+		'printSetup',
+		'run',
+		'setColorSaturation',
+		'setup',
+		'setupIPLMagnoChannel',
+		'setupOPLandIPLParvoChannel',
+		'write'
+	],
+	
+	'bioinspired_RetinaFastToneMapping': [
+        'bioinspired_RetinaFastToneMapping',
+        'create',
+		'applyFastToneMapping',
+		'setup'
+	],
+	
+	'bioinspired_TransientAreasSegmentationModule': [
+        'bioinspired_TransientAreasSegmentationModule',
+        'create',
+		'clearAllBuffers',
+		'getParameters',
+		'getSegmentationPicture',
+		'getSize',
+		'printSetup',
+		'run',
+		'setup',
+		'write'
+	]
+}
+
+white_list = makeWhiteList([core, imgproc, objdetect, video, dnn, features2d, photo, calib3d, bioinspired])
 
 # namespace_prefix_override['dnn'] = ''  # compatibility stuff (enabled by default)
 # namespace_prefix_override['aruco'] = ''  # compatibility stuff (enabled by default)

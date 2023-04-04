@@ -1,0 +1,1 @@
+python ./platforms/js/build_js.py --build_flags="-s -Os -s ALLOW_MEMORY_GROWTH=1" build_out --build_wasm --emscripten_dir ./emsdk/upstream/emscripten > build_res.txt

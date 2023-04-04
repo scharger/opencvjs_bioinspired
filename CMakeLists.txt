@@ -956,7 +956,7 @@ ocv_add_modules_compiler_options()
 ocv_register_modules()
 
 # Generate targets for documentation
-add_subdirectory(doc)
+#add_subdirectory(doc)
 
 # various data that is used by cv libraries and/or demo applications.
 add_subdirectory(data)

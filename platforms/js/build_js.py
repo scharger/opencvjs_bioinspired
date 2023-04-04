@@ -122,11 +122,12 @@ class Builder:
                "-DBUILD_ZLIB=ON",
                "-DBUILD_opencv_apps=OFF",
                "-DBUILD_opencv_calib3d=ON",
-               "-DBUILD_opencv_dnn=ON",
+               "-DBUILD_opencv_dnn=OFF",
                "-DBUILD_opencv_features2d=ON",
                "-DBUILD_opencv_flann=ON",  # No bindings provided. This module is used as a dependency for other modules.
                "-DBUILD_opencv_gapi=OFF",
                "-DBUILD_opencv_ml=OFF",
+               "-DBUILD_opencv_bioinspired=ON",
                "-DBUILD_opencv_photo=ON",
                "-DBUILD_opencv_imgcodecs=OFF",
                "-DBUILD_opencv_shape=OFF",
@@ -139,10 +140,10 @@ class Builder:
                "-DBUILD_opencv_js=ON",
                "-DBUILD_opencv_python2=OFF",
                "-DBUILD_opencv_python3=OFF",
-               "-DBUILD_EXAMPLES=ON",
+               "-DBUILD_EXAMPLES=OFF",
                "-DBUILD_PACKAGE=OFF",
-               "-DBUILD_TESTS=ON",
-               "-DBUILD_PERF_TESTS=ON"]
+               "-DBUILD_TESTS=OFF",
+               "-DBUILD_PERF_TESTS=OFF"]
         if self.options.cmake_option:
             cmd += self.options.cmake_option
         if self.options.build_doc:
