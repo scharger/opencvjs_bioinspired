@@ -36,10 +36,10 @@ function retinaExample(inputMat) {
 	}
 	
 	this.init = function(inputMat) {
-		this.inputMat 				= inputMat;
-		this.retinaOutput_magno 	= new cv.Mat(height, width, cv.CV_8UC4);
-		this.retinaOutput_parvo 	= new cv.Mat(height, width, cv.CV_8UC4);
-		this.retina 				= new cv.bioinspired_Retina(
+		this.inputMat = inputMat;
+		this.retinaOutput_magno = new cv.Mat(height, width, cv.CV_8UC4);
+		this.retinaOutput_parvo = new cv.Mat(height, width, cv.CV_8UC4);
+		this.retina = new cv.bioinspired_Retina(
 			this.retinaOutput_magno.size(),
 			false,
 			cv.RETINA_COLOR_DIAGONAL,
